@@ -32,8 +32,7 @@ B.第2套设备平时休眠，可被第1套设备的蓝牙信号唤醒，同时�
   
   
 2.第2套设备 lilygo-epd47 + hc08<br/>
-  <img src= 'https://github.com/lixy123/LilyGo-EPD47-HC08/blob/main/ink_weather.jpg?raw=true' /> <br/>
-  <img src= 'https://github.com/lixy123/LilyGo-EPD47-HC08/raw/main/ink_chixi.jpg?raw=true' /> <br/>
+  <img src= 'https://github.com/lixy123/LilyGo-EPD47-HC08/raw/main/blynk_2.jpg?raw=true' /> <br/>
   功能：显示天气
   A.lilygo-epd47
      主控芯片为esp32，驱动墨水屏显示
