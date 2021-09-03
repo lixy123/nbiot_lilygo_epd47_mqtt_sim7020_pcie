@@ -8,22 +8,22 @@
 3.第1套设备: nbiot版本的MQTT转蓝牙透传器<br/>
 4.第2套设备: 墨水屏<br/>
 5.第1套设备通过nbiot技术连接到mqtt服务器,收到文字信息后蓝牙透传给墨水屏显示.<br/>
-6.设计成2套设备是为了让墨水屏减少充电频率，使用这种设计，如果墨水屏记事留言频率不高的话，电池充满电能支持2-6个月<br/>
-  MQTT转蓝牙透传器因为需要nbiot实时联网，不适合休眠省电，用电相对较高<br/>
+6.设计成2套设备是为了让墨水屏减少充电频率，使用这种设计，如果墨水屏记事留言频率不高的话，电池充满电能支持2-6个月。MQTT转蓝牙透传器因为需要nbiot实时联网，不适合休眠省电，用电相对较高。网上查到SIM7020可能做到优化省电，应能做到电池供电，我目前没掌握此技术.<br/>
+
   
 <b>二.硬件:</b><br/>
-A.第1套设备：MQTT转蓝牙透传器
+<b>A.第1套设备：MQTT转蓝牙透传器</b><br/>
     组成: esp32+sim7020<br/>
     通过NBIOT技术连接mqtt服务器，可随时待命接收MQTT客户端发来的的文字。当收到文字后，通过蓝牙将文字发给墨水屏<br/>
     <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-2.jpg?raw=true' /> <br/>
     <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-1.jpg?raw=true' /> <br/>
     
-B.第2套设备：墨水屏
+<b>B.第2套设备：墨水屏</b><br/>
     组成: lilygo-epd47 墨水屏+hc08蓝牙硬件<br/>
     平时深度休眠，可被第1套设备的蓝牙信号唤醒，接收文字信息,刷屏显示，进入休眠<br/>
     <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/ink-1.jpg?raw=true' /> <br/>
      
-   hc08    <br/> 
+    <b> hc08 </b>   <br/> 
      hc-08是一块 BLE4.0蓝牙模块 (购买时要告诉卖方要双晶振版本，否则不支持一级节能模式)<br/>
      hc-08需要配置成客户模式，一级节能模式,蓝牙名称用AT指令修改为edp47_ink，能防止被别的设备误连<br/>    
      引脚连接:<br/>
