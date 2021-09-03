@@ -23,8 +23,8 @@ B.第2套设备平时休眠，可被第1套设备的蓝牙信号唤醒，同时�
 
 <b>二.硬件需求：</b><br/>
 1.第一套设备 ESP32 +sim7020<br/>
- <img src= 'https://github.com/lixy123/LilyGo-EPD47-HC08/raw/main/sim7020-1.jpg?raw=true' /> <br/>
-
+  <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-1.jpg?raw=true' /> <br/>
+  <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-2?raw=true' /> <br/>
   功能：mqtt连接云服务器. 收到手机(不限于手机)传过来的mqtt文字信号，文字信号通过蓝牙传给墨水屏显示<br/>
   硬件清单：<br/>
   A.esp32<br/>
@@ -32,7 +32,7 @@ B.第2套设备平时休眠，可被第1套设备的蓝牙信号唤醒，同时�
   
   
 2.第2套设备 lilygo-epd47 + hc08<br/>
-  <img src= 'https://github.com/lixy123/LilyGo-EPD47-HC08/raw/main/blynk_2.jpg?raw=true' /> <br/>
+  <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/ink-1.jpg?raw=true' /> <br/>
   功能：显示天气
   A.lilygo-epd47
      主控芯片为esp32，驱动墨水屏显示
