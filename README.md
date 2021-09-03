@@ -8,7 +8,7 @@
 3.第1套设备: nbiot版本的MQTT转蓝牙透传器<br/>
 4.第2套设备: 墨水屏<br/>
 5.第1套设备通过nbiot技术连接到mqtt服务器,收到文字信息后蓝牙透传给墨水屏显示.<br/>
-6.设计成2套设备是为了让墨水屏减少充电频率，使用这种设计，如果墨水屏记事留言频率不高的话，电池充满电能支持2-6个月。MQTT转蓝牙透传器因为需要nbiot实时联网，不适合休眠省电，用电相对较高。网上查到SIM7020可能做到优化省电，应能做到电池供电，我目前没掌握此技术.<br/>
+6.设计成2套设备是为了让墨水屏减少充电频率，使用这种设计，如果墨水屏记事留言频率不高的话，电池充满电能支持2-6个月。MQTT转蓝牙透传器因为需要nbiot实时联网，不适合休眠省电，用电相对较高。网上查到SIM7020可做到最大化优化省电，最终通过电池供电的能力，我目前没掌握此技术.<br/>
 
   
 <b>二.硬件:</b><br/>
@@ -39,8 +39,7 @@ AT+NAME=INK_047 //修改蓝牙名称，用于客户端查找蓝牙用<br/>
 AT+LED=0 //关闭led灯，省电<br/>
 注: 也可以通过连接到lilygo-epd47后,自编程序用lilygo-epd47虚拟串口传入AT命令<br/>
 
- 注：直接买lilygo 公司销售的专用于 lilygo-epd47 的hc-08模块又省事又简单。<br/>
- 上面的hc-08的步骤都不用操作。此模块就是hc08模块套上了适合lilygo-epd47模块的外壳，引脚,集成度好, 已进行AT命令预处理.上手即用 <br/>
+ 注：可以一步到位，直接买lilygo 公司销售的专用于 lilygo-epd47 的hc-08模块，以上步骤可跳过。该模块将hc08模块套上了适合lilygo-epd47模块的外壳，集成度好, 已进行AT命令预处理.上手即用 <br/>
  如图, 蓝色小模块部分: <br/>
   <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_weather/blob/main/hc08.JPG?raw=true' /> <br/>
   
@@ -62,11 +61,11 @@ nbiot_lilygo_epd47_mqtt_sim7020_pcie.ino 文件变量，共3处需要修改:<br/
 String mqtt_clientid = "client_you_7020";<br/>
 String mqtt_topic = "/you_lily_mqtt";<br/>
 String mqtt_topic_resp = "/you_lily_mqtt/resp";<br/>
-    代码里面有很多功能没描述到，例如语音TTS等，请看代码自己了解。
+    代码里面还有一些未描述的功能，例如语音TTS等，可查看代码了解。
 
 <br/>
    <b>2.epd47_blue_waker_show_weather 墨水屏显示文字的代码 </b>   <br/>
-   代码位置在 https://github.com/lixy123/nbiot_lilygo_epd47_weather/tree/main/epd47_blue_waker_show_weather
+   代码位置在 https://github.com/lixy123/nbiot_lilygo_epd47_weather/tree/main/epd47_blue_waker_show_weather<br/>
   烧录到LilyGo-EPD47墨水屏<br/>  
 2.1 软件: arduino 1.8.13<br/>
 2.2 用到的库文件:<br/>
@@ -77,7 +76,7 @@ https://github.com/bblanchon/ArduinoJson 版本: 6<br/>
 https://github.com/ivanseidel/LinkedList 最新版本<br/>
 2.3开发板选择：TTGO-T-WATCH / PSRAM ENABLED<br/>
 2.4选择端口，点击烧录<br/>
-注：本代码内置显示天气，语音TTS的代码功能，本项目用不着的可去掉.
+注：本代码内置显示天气，语音TTS的代码功能，本项目用不着的可去掉.<br/>
   
 <b>四.技术指标：</b><br/>
 第1套设备电流约40ma,  普通18650电池2000mah, 估算支撑约2000/40/24约为2天。不建议电池供电<br/>
