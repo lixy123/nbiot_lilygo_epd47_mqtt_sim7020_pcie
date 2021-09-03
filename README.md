@@ -73,6 +73,7 @@ AT+LED=0 //关闭led灯，省电<br/>
 String mqtt_clientid = "client_you_7020";<br/>
 String mqtt_topic = "/you_lily_mqtt";<br/>
 String mqtt_topic_resp = "/you_lily_mqtt/resp";<br/>
+    代码里面有很多功能没描述到，例如语音TTS等，请看代码自己了解。
 
 <br/>
    <b>2.epd47_blue_waker_show_weather 墨水屏支持蓝牙唤醒并显示文字的代码 </b>   <br/>
