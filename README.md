@@ -16,12 +16,17 @@
 <b>二.硬件:</b><br/>
 <b>A.第1套设备：MQTT转蓝牙透传器</b><br/>
     组成: esp32+sim7020<br/>
+    硬件资料:<br/>
+    https://github.com/Xinyuan-LilyGO/LilyGo-T-PCIE<br/>
     通过NBIOT技术连接mqtt服务器，可随时待命接收MQTT客户端发来的的文字。当收到文字后，通过蓝牙将文字发给墨水屏<br/>
     <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-2.jpg?raw=true' /> <br/>
     <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-1.jpg?raw=true' /> <br/>
     
 <b>B.第2套设备：墨水屏</b><br/>
     组成: lilygo-epd47 墨水屏+hc08蓝牙硬件<br/>
+    硬件资料: <br/>
+    https://github.com/Xinyuan-LilyGO/LilyGo-EPD47<br/>
+    https://github.com/Xinyuan-LilyGO/EPD47-HC08<br/>
     平时深度休眠，可被第1套设备的蓝牙信号唤醒，接收文字信息,刷屏显示，进入休眠<br/>
     <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/ink-1.jpg?raw=true' /> <br/>
      
