@@ -89,7 +89,7 @@ https://github.com/bblanchon/ArduinoJson 版本: 6<br/>
 https://github.com/ivanseidel/LinkedList 最新版本<br/>
 2.3开发板选择：TTGO-T-WATCH / PSRAM ENABLED<br/>
 2.4选择端口，点击烧录<br/>
-注：本代码内置显示天气，语音TTS的代码功能，本项目用不着的可去掉.<br/>
+注：代码内置显示天气，语音TTS的代码功能，是个增强的墨水屏套餐。用不着的代码可自行精简去掉.<br/>
   <br/>
 <b>四.技术指标：</b><br/>
 第1套设备电流约40ma,  普通18650电池2000mah, 估算支撑约2000/40/24约为2天。不建议电池供电<br/>
