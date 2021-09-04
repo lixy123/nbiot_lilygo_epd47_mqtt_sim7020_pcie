@@ -33,6 +33,7 @@
     https://github.com/Xinyuan-LilyGO/EPD47-HC08<br/>
     >功能：<br/>
     平时深度休眠，收到第1套设备的蓝牙信号后唤醒，同时接收文字信息,刷屏显示文字，进入休眠<br/>
+    >样图:<br/>
     <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/ink-1.jpg?raw=true' /> <br/>
      
     <b> hc08 </b>   <br/> 
