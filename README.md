@@ -27,8 +27,7 @@
     >功能：<br/>
     通过NBIOT技术连接mqtt服务器，可随时待命接收MQTT客户端发来的的文字。当收到文字后，通过蓝牙将文字发给墨水屏<br/>
     >样图:<br/>
-    <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-2.jpg?raw=true' /> <br/>
-    <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020-1.jpg?raw=true' /> <br/>
+    <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/sim7020.jpg?raw=true' /> <br/>
     
 <b>B.第2套设备：墨水屏</b><br/>
     >组成:<br/>
