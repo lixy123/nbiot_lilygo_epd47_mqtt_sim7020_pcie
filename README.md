@@ -88,6 +88,8 @@ String mqtt_topic_resp = "/you_lily_mqtt/resp";<br/>
     
 <b>2.epd47_blue_waker_center_mqtt_weather_sim7020_pcie 信息转蓝牙代码 </b>  <br/>
    上面程序的升级版本.  <br/>
+   需修改源码中的: config.h jisuapi_key变量 <br/> 
+   KEY 来源：极速数据   https://www.jisuapi.com/api/weather/  <br/>
    如果mqtt收到信息“weather” 则nbiot获取天气信息，并发送到墨水屏显示. <br/>
 
 <br/>
