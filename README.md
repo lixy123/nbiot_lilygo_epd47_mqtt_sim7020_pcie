@@ -1,9 +1,12 @@
-墨水屏nb-iot扩展  <br/>
+结合墨水屏显示的nb-iot信息中心  <br/>
 
 <b>一.功能：</b><br/>
-1.手机录入文字通过MQTT,发送到墨水屏进行记事留言.<br/>
-2.墨水屏如果收到 "weather" 关键字, 墨水屏显示天气 (触发器可以用树莓派, https://ifttt.com/ 等)  <br/>
-3.如果用触发器 https://ifttt.com/ 则能扩展出很多可能. <br/>
+1.远程记事留言：<br/>
+    手机输入文字，通过MQTT协议发送到墨水屏显示。<br/>
+2.显示天气:<br/>
+    当通过MQTT协议收到 "weather" 关键字, nb-iot获取天气信息，并转发到墨水屏显示 <br/>
+    触发器可以用树莓派, https://ifttt.com/ 等  <br/>
+    通过触发器 https://ifttt.com/ 能扩展出其它相关功能，比如当出现异常天气，收到邮件等 <br/>
 
 <b>特点：</b><br/>
 1.网络选用nb-iot，没用wifi。因为有些地方无wifi(例如车里) /场地更换重新配置wifi账号繁琐 /有些wifi验证复杂，单片机无法连接使用<br/>
@@ -67,7 +70,7 @@ AT+LED=0 //关闭led灯，省电<br/>
 
  
 <b>三.代码说明:</b> <br/>
-  <b>1.nbiot_lilygo_epd47_mqtt_sim7020_pcie nbiot信息转蓝牙代码 </b>  <br/>
+  <b>1.nbiot_lilygo_epd47_mqtt_sim7020_pcie nbiot 信息转蓝牙代码 </b>  <br/>
   烧录到1套设备的ESP32芯片上<br/> 
    1.1 软件: arduino 1.8.13<br/>
    1.2 用到的库文件:<br/>
@@ -89,9 +92,9 @@ String mqtt_topic_resp = "/you_lily_mqtt/resp";<br/>
   烧录到LilyGo-EPD47墨水屏<br/>  
   <br/>  
   
-   <b>3.nbiot_lilygo_epd47_mqtt_plus_sim7020_pcie nbiot信息转蓝牙代码 </b>  <br/>
-   升级版本.  <br/>
-   如果mqtt收到信息weather,则通过nbiot获取天气,信息发送到墨水屏显示. <br/>
+   <b>3.epd47_blue_waker_center_mqtt_weather_sim7020_pcie 信息转蓝牙代码 </b>  <br/>
+   功能升级版本.  <br/>
+   如果mqtt收到信息“weather” 则nbiot获取天气信息，并发送到墨水屏显示. <br/>
      <br/> 
 
 2.1 软件: arduino 1.8.13<br/>
