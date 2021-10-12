@@ -85,17 +85,18 @@ String mqtt_clientid = "client_you_7020";<br/>
 String mqtt_topic = "/you_lily_mqtt";<br/>
 String mqtt_topic_resp = "/you_lily_mqtt/resp";<br/>
     代码里面还有一些未描述的功能，例如语音TTS等，可查看代码了解。
+    
+<b>2.epd47_blue_waker_center_mqtt_weather_sim7020_pcie 信息转蓝牙代码 </b>  <br/>
+   上面程序的升级版本.  <br/>
+   如果mqtt收到信息“weather” 则nbiot获取天气信息，并发送到墨水屏显示. <br/>
 
 <br/>
-   <b>2.epd47_blue_waker_show_weather 墨水屏显示文字的代码 </b>   <br/>
+<b>3.epd47_blue_waker_show_weather 墨水屏显示文字的代码 </b>   <br/>
    代码位置在 https://github.com/lixy123/nbiot_lilygo_epd47_weather/tree/main/epd47_blue_waker_show_weather<br/>
   烧录到LilyGo-EPD47墨水屏<br/>  
   <br/>  
   
-   <b>3.epd47_blue_waker_center_mqtt_weather_sim7020_pcie 信息转蓝牙代码 </b>  <br/>
-   功能升级版本.  <br/>
-   如果mqtt收到信息“weather” 则nbiot获取天气信息，并发送到墨水屏显示. <br/>
-     <br/> 
+
 
 2.1 软件: arduino 1.8.13<br/>
 2.2 用到的库文件:<br/>
