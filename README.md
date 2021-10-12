@@ -84,6 +84,11 @@ String mqtt_topic_resp = "/you_lily_mqtt/resp";<br/>
    <b>2.epd47_blue_waker_show_weather 墨水屏显示文字的代码 </b>   <br/>
    代码位置在 https://github.com/lixy123/nbiot_lilygo_epd47_weather/tree/main/epd47_blue_waker_show_weather<br/>
   烧录到LilyGo-EPD47墨水屏<br/>  
+  
+   <b>2.nbiot_lilygo_epd47_mqtt_plus_sim7020_pcie nbiot信息转蓝牙代码 </b>  <br/>
+   升级版本. 
+   如果mqtt收到信息weather,则通过nbiot获取天气,信息发送到墨水屏显示.
+   
 2.1 软件: arduino 1.8.13<br/>
 2.2 用到的库文件:<br/>
 https://github.com/espressif/arduino-esp32 版本:1.0.6<br/>
