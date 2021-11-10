@@ -22,7 +22,7 @@ nb-iot信息中心 转发墨水屏显示  <br/>
 3.约10几秒左右，墨水屏显示手机发出的文字.<br/>
 
 系统运行原理：<br/>
- <img src= 'https://github.com/lixy123/nbiot_lilygo_epd47_mqtt_sim7020_pcie/blob/main/yuanli.JPG?raw=true' /> <br/>
+ <img src= 'https://github.com/lixy123/ESP32_S2_PC_Waker/blob/main/yuanli.JPG?raw=true' /> <br/>
   
 <b>二.硬件:</b><br/>
 <b>A.第1套设备：MQTT转蓝牙透传器</b><br/>
